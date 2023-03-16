@@ -20,8 +20,7 @@ public class ReverseStringEachWord {
 
         String reverseWord="";
         for(String x:words){
-            StringBuilder sb=new StringBuilder(x);
-            sb.reverse();
+            StringBuilder sb=new StringBuilder(x).reverse();
             reverseWord=reverseWord+sb.toString()+" ";
         }
         System.out.println(reverseWord);
